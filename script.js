@@ -42,4 +42,18 @@ document.addEventListener("DOMContentLoaded", function() {
         shootingStar.style.left = `${Math.random() * 100}vw`;
         starsContainer.appendChild(shootingStar);
     }
+    // Autoplay background music
+    const music = document.getElementById('background-music');
+    const playMusic = () => {
+        if (music.paused) {
+            music.play().catch(error => {
+                console.error('Autoplay was prevented:', error);
+                document.addEventListener('click', () => {
+                    music.play();
+                }, { once: true });
+            });
+        }
+    };
+
+    playMusic();
 });
