@@ -160,17 +160,14 @@ body {
     background: radial-gradient(circle, rgba(255,69,0,1) 0%, rgba(255,140,0,1) 70%, rgba(255,0,0,0.8) 100%);
     border-radius: 50%;
     box-shadow: 0 0 50px rgba(255, 69, 0, 0.5), 0 0 100px rgba(255, 69, 0, 0.5);
-    animation: shine 2s infinite alternate;
+    animation: shine 0s infinite alternate;
     z-index: -2;
     top: 10%;
     left: 10%;
 }
 
 @keyframes glow {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 50px rgba(255, 69, 0, 0.5), 0 0 100px rgba(255, 69, 0, 0.5);
-    }
+  
     100% {
         transform: scale(1.1);
         box-shadow: 0 0 70px rgba(255, 69, 0, 0.7), 0 0 140px rgba(255, 69, 0, 0.7);
