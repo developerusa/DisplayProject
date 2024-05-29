@@ -44,12 +44,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     // Autoplay background music
     const music = document.getElementById('background-music');
+    
     const playMusic = () => {
         if (music.paused) {
             music.play().catch(error => {
                 console.error('Autoplay was prevented:', error);
                 document.addEventListener('click', () => {
                     music.play();
+                    music.volume = 0.5;
                 }, { once: true });
             });
         }
