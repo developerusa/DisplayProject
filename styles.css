@@ -216,9 +216,9 @@ body {
 }
 
 #linkedin-logo {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
+    width: 41px;
+    height: 41px;
+    transition: transform 0.4s ease;
 }
 
 #linkedin-logo:hover {
